@@ -1,29 +1,16 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Monster : MonoBehaviour
+public class MonsterSide : MonoBehaviour
 {
     public float spd = 1.0f;
-    Vector3 direct = Vector3.down;
+    Vector3 direct;
 
     public GameObject prefabsExplosion;
-
-    void Start()
+    public void SetDirection(Vector3 dir)
     {
-        GameObject playerObj = GameObject.Find("Character");
-
-        int rnd = Random.Range(0, 3);
-
-        if (rnd == 0 && playerObj != null)
-        {
-            Vector3 dir = playerObj.transform.position - transform.position;
-            direct = dir.normalized;
-        }
-        else
-        {
-            direct = Vector3.down;
-        }
+        direct = dir.normalized;
     }
 
     void Update()
@@ -45,10 +32,16 @@ public class Monster : MonoBehaviour
             {
                 scoreManager.bestScore = scoreManager.nowScore;
                 PlayerPrefs.SetInt("bestscore", scoreManager.bestScore);
-
                 scoreManager.bestScoreUI.text = "Best Score : " + scoreManager.bestScore;
             }
 
+            Instantiate(prefabsExplosion, transform.position, Quaternion.identity);
+
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
+        if (other.CompareTag("Player"))
+        {
             Instantiate(prefabsExplosion, transform.position, Quaternion.identity);
 
             Destroy(other.gameObject);

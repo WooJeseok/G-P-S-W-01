@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2488801989038252795}
   - component: {fileID: 2488801989038252798}
   - component: {fileID: 2488801989038252794}
+  - component: {fileID: 8697677843969079568}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -62,6 +63,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletObject: {fileID: 4841489194145609361, guid: 8a483d5cea51b38458d3bf885faff59f, type: 3}
   bulletFireObject: {fileID: 2488801990329379417}
+  bulletCount: 20
+--- !u!114 &8697677843969079568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2488801989038252799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cb61ebc589646d4eb84cf2eee3d1db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spd: 5
+  prefabsExplosion: {fileID: 7354695869903840038, guid: 8d03efb8852445040b36a90d33f0f5c6, type: 3}
 --- !u!1 &2488801990329379417
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +189,10 @@ PrefabInstance:
     - target: {fileID: 6561396220807399069, guid: 3d9ce70bd167b71469f5ab332d2c2f26, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7852731327922689926, guid: 3d9ce70bd167b71469f5ab332d2c2f26, type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d9ce70bd167b71469f5ab332d2c2f26, type: 3}
