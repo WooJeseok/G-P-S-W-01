@@ -77,7 +77,7 @@ MonoBehaviour:
   dropPrefab: {fileID: 6135580181468162806, guid: 6c297ea3e44f5b64c8e375bbf2af0e8b, type: 3}
   dropTables:
   - itemData: {fileID: 11400000, guid: a0d228c74d1ae8b448fb18f3ef567e42, type: 2}
-    dropRate: 0.5
+    dropRate: 1
     minCount: 1
     maxCount: 5
 --- !u!1001 &2771143570511601587
