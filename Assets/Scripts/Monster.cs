@@ -50,7 +50,8 @@ public class Monster : MonoBehaviour
             }
 
             Instantiate(prefabsExplosion, transform.position, Quaternion.identity);
-
+            MonsterDropper dropper = GetComponent<MonsterDropper>();
+            if (dropper != null) dropper.Drop();
             Destroy(other.gameObject);
             Destroy(gameObject);
         }

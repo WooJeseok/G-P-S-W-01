@@ -17,10 +17,10 @@ public class BulletFire : MonoBehaviour
                 bulletFireObject.transform.position,
                 Quaternion.identity
             );
-
+            
             bullet.GetComponent<Bullet>().SetDirection(Vector3.up);
         }
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire3"))
         {
             FireCircle();
         }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1501304070813008638}
   - component: {fileID: 4838934130388839743}
-  - component: {fileID: 2460822938346678015}
+  - component: {fileID: 3213670261511834743}
   m_Layer: 0
   m_Name: EnemyBF
   m_TagString: Untagged
@@ -46,7 +46,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2460822938346678015
+--- !u!114 &3213670261511834743
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,12 +55,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5317099082809215396}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b171011195b6f354c93e8207e1d630a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 928527b9fc72d864b94ce1e4970b00fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bulletObject: {fileID: 4841489194145609361, guid: a6aff63ab6003324c89027131fa62b26, type: 3}
   bulletFireObject: {fileID: 5317099082809215396}
-  bulletCount: 20
+  fireInterval: 2
+  bulletCount: 12
 --- !u!1 &8828845809515930533
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,6 +74,7 @@ GameObject:
   - component: {fileID: 5834178424177740241}
   - component: {fileID: 2136459904543476843}
   - component: {fileID: -4545237060053304428}
+  - component: {fileID: 536489380815123744}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -140,6 +142,24 @@ MonoBehaviour:
   bulletFireObject: {fileID: 5317099082809215396}
   fireInterval: 2
   bulletCount: 12
+--- !u!114 &536489380815123744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8828845809515930533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afd3753b6ba760c4a9e67e37f2819cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPrefab: {fileID: 6135580181468162806, guid: 6c297ea3e44f5b64c8e375bbf2af0e8b, type: 3}
+  dropTables:
+  - itemData: {fileID: 11400000, guid: a0d228c74d1ae8b448fb18f3ef567e42, type: 2}
+    dropRate: 0.5
+    minCount: 1
+    maxCount: 5
 --- !u!1001 &2332297569619155389
 PrefabInstance:
   m_ObjectHideFlags: 0

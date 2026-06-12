@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5741077894710654892}
   - component: {fileID: -2867747821464518961}
   - component: {fileID: 2215309857947222129}
+  - component: {fileID: 4068690429235071837}
   m_Layer: 0
   m_Name: MonsterSide
   m_TagString: Untagged
@@ -42,7 +43,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7485334960232240538}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -61,6 +62,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spd: 1
   prefabsExplosion: {fileID: 7354695869903840038, guid: 8d03efb8852445040b36a90d33f0f5c6, type: 3}
+--- !u!114 &4068690429235071837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7485334960232240538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afd3753b6ba760c4a9e67e37f2819cbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPrefab: {fileID: 6135580181468162806, guid: 6c297ea3e44f5b64c8e375bbf2af0e8b, type: 3}
+  dropTables:
+  - itemData: {fileID: 11400000, guid: a0d228c74d1ae8b448fb18f3ef567e42, type: 2}
+    dropRate: 0.5
+    minCount: 1
+    maxCount: 5
 --- !u!1001 &2771143570511601587
 PrefabInstance:
   m_ObjectHideFlags: 0

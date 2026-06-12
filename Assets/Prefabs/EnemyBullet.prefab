@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4841489194145609366}
   - component: {fileID: 4841489194145609363}
+  - component: {fileID: 8519870813908555311}
   - component: {fileID: -3071204604747790086}
   - component: {fileID: 649004649501415299}
-  - component: {fileID: 8519870813908555311}
   m_Layer: 0
   m_Name: EnemyBullet
   m_TagString: EnemyBullet
@@ -49,6 +49,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8519870813908555311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4841489194145609361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258909ba2883e014484a8f5e7b27da0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &-3071204604747790086
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -161,18 +173,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8519870813908555311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4841489194145609361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 258909ba2883e014484a8f5e7b27da0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &8060907194794963221
 PrefabInstance:
   m_ObjectHideFlags: 0
